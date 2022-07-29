@@ -1,8 +1,10 @@
 from django.urls import path
+
 from . import views
 
 urlpatterns = [
-    path('', views.index_page, name="index_page"),
-    path('posts/', views.blog_posts, name="blog_posts_page"),
-    path('post/<slug>', views.post_detail, name="post_detail_page")
+    path("", views.starting_page, name="starting-page"),
+    path("posts", views.posts, name="posts-page"),
+    path("posts/<slug:slug>", views.post_detail,
+         name="post-detail-page")  # /posts/my-first-post
 ]

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+
+       {% include 'includes/css_js.html' %}
+    </head>
+
+    <body>
+
+        <!-- Start: Header Section -->
+        {% include 'includes/header.html' %}
+        <!-- End: Header Section -->
+
+        {% block content %}{% endblock %}
+
+        {% include 'includes/footer.html' %}
+
+    </body>
+
+
+</html>
